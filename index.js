@@ -22,8 +22,6 @@ function addToCart(item) {
  return `${item} has been added to your cart.`
 }
 
-
-
 function viewCart() {
   if (cart.length === 0) {
        return "Your shopping cart is empty.";
@@ -33,7 +31,7 @@ function viewCart() {
        var cartReturn = "In your cart, you have ";
        for (var i = 0; i < cart.length; i ++) {
          if (i === 0) {
-            cartReturn += `${cart[i].itemName} at $${cart[i].itemPrice} and`
+            cartReturn += `${cart[i].itemName} at $${cart[i].itemPrice}, and`
          } else if (i === 1) {
             cartReturn += ` ${cart[i].itemName} at $${cart[i].itemPrice}.`
          }
