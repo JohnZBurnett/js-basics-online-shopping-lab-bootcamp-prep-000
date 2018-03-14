@@ -31,7 +31,7 @@ function viewCart() {
        var cartReturn = "In your cart, you have ";
        for (var i = 0; i < cart.length; i ++) {
          if (i === 0) {
-            cartReturn += `${cart[i].itemName} at $${cart[i].itemPrice}, and`
+            cartReturn += `${cart[i].itemName} at $${cart[i].itemPrice} and`
          } else if (i === 1) {
             cartReturn += ` ${cart[i].itemName} at $${cart[i].itemPrice}.`
          }
